@@ -2,6 +2,10 @@
 
 <div>
     <p>
-        Nous possédons une flotte de {{  numberOfStarships }} vaisseaux spaciaux !
-    </p>
+        Nous possédons une flotte de {{  numberOfStarships }} vaisseaux spaciaux !</p>
+    {% if numberOfStarships > 400 %}
+        <p>
+            C'est une flotte considérable !
+        </p>
+    {% endif %}
 </div>
